@@ -1,5 +1,5 @@
-function merge_sort(collection: number[]): number[] {
-  if (collection.length <= 1) return collection;
+export function merge_sort(collection: number[]): number[] {
+  if (collection.length <= 1) return [...collection];
 
   const mid = Math.floor(collection.length / 2);
   const left = merge_sort(collection.slice(0, mid));
@@ -8,7 +8,7 @@ function merge_sort(collection: number[]): number[] {
   return merge_helper(left, right);
 }
 
-function merge_helper(left: number[], right: number[]): number[] {
+export function merge_helper(left: number[], right: number[]): number[] {
   let result_collection: number[] = [],
     left_index = 0,
     right_index = 0;
@@ -32,7 +32,7 @@ function merge_helper(left: number[], right: number[]): number[] {
     .concat(right.slice(right_index));
 }
 
-function merge(
+export function merge(
   collection_1: number[],
   collection_2: number[],
   collection_3: number[]
