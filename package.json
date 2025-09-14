@@ -3,12 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "siriphong.chotirat",
+  "license": "",
   "devDependencies": {
     "@types/node": "^24.4.0",
     "@vitest/coverage-v8": "^3.2.4",
